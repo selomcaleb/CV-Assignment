@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+.container {  display: grid;
+    width: 720px;
+    height: 1730px;
+    margin: auto;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 0.7fr 1.4fr 1fr;
+    /* gap: 0px 0px; */
+    /* grid-auto-flow: column; */
+    grid-template-areas:
+      "left-side-name right-side-experience"
+      "left-side-personaldetails right-side-experience"
+      "left-side-personaldetails right-side-education";
+  }
+  body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: wheat;
+  }
+  
+  .left-side-name { grid-area: left-side-name; }
+  
+  .left-side-personaldetails { grid-area: left-side-personaldetails; }
+  
+  .right-side-experience { grid-area: right-side-experience; }
+  
+  .right-side-education { grid-area: right-side-education; }
+  
+  
+  .left-side-name {
+     grid-area: left-side-name; 
+     background-color:dimgrey ;
+     font-size:x-large;
+     padding-left: 20px;
+     padding-right: 20px;
+     /* height:100px */
+     
+    }
+    h4{
+        border-bottom:1px solid gray;
+        padding-bottom: 4px ;
+        padding-left: 20px;
+        padding-right: 20px;
+     
+    }
+    .first_column{
+        border-bottom:1px solid white;
+        padding-bottom: 3px ;
+    }
+    
+  
+  .left-side-personaldetails { 
+    grid-area: left-side-personaldetails; 
+    background-color: dimgrey;
+    height:782px
+
+     
+  }
+  .inside-left-side{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+  
+  .right-side-experience { 
+    grid-area: right-side-experience;
+    background-color: white;
+    padding-left: 30px;
+    
+ }
+  
+  .right-side-education { grid-area: right-side-education; 
+    background-color: white;
+   
+}
+
+img.left-side-personaldetails{
+    font-size: 10px;
+    color: aqua;
+}
+  
